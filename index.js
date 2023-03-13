@@ -6,7 +6,7 @@ const app = express();
 
 
 
-mongoose.connect('mongodb://localhost:27017/Crud-Operation', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://kevin18:Kevin1810@cluster0.kwgzz.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology: true})
 const db = mongoose.connection
 
 db.on('error' , (err) =>{ 
