@@ -77,7 +77,7 @@ const update = (req, res) => {
         phone: req.body.phone,
         age: req.body.age
         })
-
+console.log("dfsfd", userId , "sdfsdfsd ", updateData);
     User.findByIdAndUpdate(userId, {$set: updateData})
     .then(user =>{
         res.json({
